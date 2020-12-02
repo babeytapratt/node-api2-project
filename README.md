@@ -27,7 +27,7 @@ Configure the API to handle to the following routes:
 | ------ | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | POST   | /api/posts              | Creates a post using the information sent inside the `request body`.                                                                                                        |
 | POST   | /api/posts/:id/comments | Creates a comment for the post with the specified id using information sent inside of the `request body`.                                                                   |
-| GET    | /api/posts              | Returns an array of all the post objects contained in the database.                                                                                                         |
+| GET    | /api/posts              | Returns an array of all the post objects contained in the zdatabase.                                                                                                         |
 | GET    | /api/posts/:id          | Returns the post object with the specified id.                                                                                                                              |
 | GET    | /api/posts/:id/comments | Returns an array of all the comment objects associated with the post with the specified id.                                                                                 |
 | DELETE | /api/posts/:id          | Removes the post with the specified id and returns the **deleted post object**. You may need to make additional calls to the database in order to satisfy this requirement. |
@@ -145,7 +145,7 @@ When the client makes a `PUT` request to `/api/posts/:id`:
   - update the post document in the database using the new information sent in the `request body`.
   - return HTTP status code `200` (OK).
   - return the newly updated _post_.
-  
+
 ### Database Persistence Helpers
 
 The `data` folder contains a database populated with test `posts`.
